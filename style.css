@@ -1,34 +1,40 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     width: 100%;
     height: 100%;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-right: 3vw;
 }
-header .logo{
+
+header .logo {
     width: 700px;
 }
-header .contact{
+
+header .contact {
     display: flex;
     flex-direction: column;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     align-items: center;
 }
-.contact h2{
+
+.contact h2 {
     position: relative;
     color: rgb(166, 20, 20);
     letter-spacing: 4px;
     font-size: 26px;
 }
-.contact h2::after{
+
+.contact h2::after {
     content: "";
     position: absolute;
     bottom: -8px;
@@ -38,60 +44,71 @@ header .contact{
     height: 4px;
     background-color: rgb(37, 37, 37);
 }
-.contact h1{
+
+.contact h1 {
     font-size: 59px;
     margin-top: 4px;
 }
-.contact p{
+
+.contact p {
     line-height: 10px;
     font-size: 20px;
     letter-spacing: 2px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
 }
-nav{
+
+nav {
     background-image: url(menu_bg.gif);
     background-size: contain;
     height: 55px;
     display: flex;
     justify-content: right;
 }
-nav .menu{
+
+nav .menu {
     color: white;
     display: flex;
     font-family: Arial, sans-serif;
     align-items: center;
 }
-nav .menu a{
+
+nav .menu a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: 520;
     padding: 17px 20px;
 }
-nav .menu a:hover{
+
+nav .menu a:hover {
     background-color: gray;
 }
-main{
+
+main {
     padding: 40px 40px 60px 40px;
 }
-main .posters{
+
+main .posters {
     display: flex;
     gap: 15px;
 }
-.posters .pos{
-    width: 820px;
+
+.posters .pos {
+    width: 810px;
     filter: drop-shadow(0 1px 5px black);
 }
-.posters .w-pos{
+
+.posters .w-pos {
     background-image: url("form_bg.jpg");
     background-size: cover;
     position: relative;
     padding: 80px 22px 0 25px;
-    width: 700px;
+    width: 600px;
     filter: drop-shadow(0 1px 5px black);
 }
-.w-pos h2{
+
+.w-pos h2 {
     display: inline;
     position: absolute;
     top: 0;
@@ -102,7 +119,8 @@ main .posters{
     font-size: 28px;
     letter-spacing: 1px;
 }
-.w-pos .que{
+
+.w-pos .que {
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
@@ -113,31 +131,37 @@ main .posters{
     width: 260px;
     gap: 5px;
 }
-.que h4{
+
+.que h4 {
     font-size: 23px;
     letter-spacing: 1px;
 }
-.que h3{
+
+.que h3 {
     font-size: 38px;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 900;
     color: rgba(27, 63, 100);
 }
-.que h5{
+
+.que h5 {
     font-size: 25px;
     line-height: 18px;
 }
-.w-pos .info{
+
+.w-pos .info {
     font-family: sans-serif;
     font-size: 19.7px;
 }
-.w-pos .details{
+
+.w-pos .details {
     display: flex;
     align-items: center;
     padding: 15px 5px;
     gap: 17px;
 }
-.details .input{
+
+.details .input {
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -146,39 +170,46 @@ main .posters{
     font-weight: 600;
     font-size: 15px;
 }
-.input input{
+
+.input input {
     height: 25px;
     width: 200px;
 }
-.details img{
+
+.details img {
     transform: rotate(12deg);
     width: 200px;
 }
-textarea{
+
+textarea {
     resize: none;
     height: 75px;
     width: 470px;
     margin: 0 10px;
 }
-textarea::placeholder{
+
+textarea::placeholder {
     color: rgb(37, 37, 37);
     font-family: arial;
     padding: 5px 0 0 10px;
     font-weight: 600;
     font-size: 16px;
 }
-.but{
+
+.but {
     display: flex;
     align-items: center;
     margin-top: 10px;
     gap: 10px;
 }
-.gry{
+
+.gry {
     color: rgba(119, 119, 111);
     font-style: italic;
     font-size: 17px;
 }
-.but button{
+
+.but button {
     font-family: sans-serif;
     font-size: 21px;
     background-color: rgba(179, 8, 8);
@@ -189,8 +220,144 @@ textarea::placeholder{
     display: flex;
     align-items: center;
     gap: 12px;
+    cursor: pointer;
 }
-.but button img{
+
+.but button img {
     width: 12px;
 }
 
+.laws {
+    display: flex;
+    padding: 55px 0;
+    width: 100%;
+}
+
+.first {
+    width: 365px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 33px 0 25px;
+}
+
+.first .heading {
+    align-self: self-start;
+}
+
+.laws h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28px;
+    color: rgb(73, 73, 73);
+    letter-spacing: -1px;
+    padding-bottom: 7px;
+}
+
+span {
+    color: rgb(163, 34, 44);
+}
+
+.heading h3 {
+    font-family: arial;
+    font-size: 17px;
+    padding-top: 4px;
+    color: rgb(151, 34, 44);
+
+}
+
+.first .note {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+
+.laws p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 17px;
+
+}
+
+.note p {
+    flex: 2;
+    padding-top: 15px;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.note .notebook {
+    width: 85px;
+}
+
+.button {
+    border-top: 1px solid grey;
+    width: 220px;
+    padding-left: 32px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+.button button {
+
+    background-color: rgb(163, 9, 9);
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.3), 4px 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.button button img {
+    width: 10px;
+}
+
+.second {
+    border-left: 1px solid rgb(168, 168, 168);
+    border-right: 1px solid rgb(168, 168, 168);
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+}
+
+.second .top {
+    display: flex;
+    flex: 1;
+    border-bottom: 1px solid rgb(168, 168, 168);
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 22px;
+    gap: 5px;
+}
+
+.top .blog {
+    width: 200px;
+}
+
+.laptop {
+    width: 185px;
+}
+
+.second .bottom {
+    padding: 15px 25px 0 30px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.book {
+    width: 170px;
+}
+
+.third {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
