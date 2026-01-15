@@ -290,6 +290,13 @@ span {
 
 }
 
+.first,
+.second,
+.third {
+    max-width: 100%;
+    width: auto;
+}
+
 .first .note {
     display: flex;
     align-items: start;
@@ -603,12 +610,6 @@ footer {
     height: 30px;
 }
 
-.first,
-.second,
-.third {
-    max-width: 100%;
-    width: auto;
-}
 
 @media (max-width: 1240px) {
     header {
@@ -685,6 +686,12 @@ footer {
     .laws {
         flex-direction: column;
         gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first {
+        width: 500px;
     }
 
     .page {
