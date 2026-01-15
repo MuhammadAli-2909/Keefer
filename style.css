@@ -11,12 +11,12 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    gap: 150px;
     align-items: center;
-    padding-right: 3vw;
 }
 
 header .logo {
+    max-width: 100%;
     width: 700px;
 }
 
@@ -64,14 +64,17 @@ nav {
     height: 55px;
     display: flex;
     justify-content: right;
+    align-items: center;
 }
 
 nav .menu {
-    color: white;
+    list-style: none;
+    margin: 0;
     display: flex;
     font-family: Arial, sans-serif;
     align-items: center;
     padding-right: 20px;
+    list-style-type: none;
 }
 
 nav .menu a {
@@ -84,6 +87,25 @@ nav .menu a {
 
 nav .menu a:hover {
     background-color: gray;
+}
+
+#ham {
+    display: none;
+}
+
+.togg {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: none;
+    position: relative;
+    z-index: 3;
+}
+
+.togg img {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 main {
@@ -158,6 +180,7 @@ main .posters {
 .w-pos .details {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 15px 5px;
     gap: 17px;
 }
@@ -501,11 +524,12 @@ h1 {
 
 }
 
-.review .button{
+.review .button {
     border-top: 3px solid grey;
     padding-left: 53px;
     margin-bottom: 30px;
 }
+
 .review .button button {
     font-size: 13px;
     box-shadow: -9px 0 12px rgba(0, 0, 0, 0.3), 9px 0 12px rgba(0, 0, 0, 0.3);
@@ -522,31 +546,37 @@ h1 {
     width: 200px;
     padding: 0 0 3px 8px;
 }
-.qq{
+
+.qq {
     width: 175px;
     margin-bottom: 20px;
 }
-.coll{
+
+.coll {
     width: 140px;
     margin-bottom: 35px;
 }
+
 .lines {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.follow{
+
+.follow {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 200px;
 }
-.follow h2{
+
+.follow h2 {
     padding-left: 30px;
     font-size: 27px;
 }
+
 .lines div {
     height: 2px;
     background-color: rgb(109, 109, 109);
@@ -557,15 +587,219 @@ h1 {
     width: 100%;
     height: 15px;
 }
-.social{
+
+.social {
     display: flex;
     gap: 10px;
 }
-.social img{
+
+.social img {
     width: 38px;
 }
+
 footer {
     background-image: url(ft_bg.png);
     background-size: contain;
     height: 30px;
+}
+
+.first,
+.second,
+.third {
+    max-width: 100%;
+    width: auto;
+}
+
+@media (max-width: 1240px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header .logo {
+        width: 100%;
+    }
+
+    nav {
+        position: relative;
+        z-index: 2;
+        background: none;
+    }
+
+    .togg img {
+        filter: invert();
+    }
+
+    .togg {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 12px;
+    }
+
+    nav .menu {
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        display: none;
+        width: 250px;
+        height: 100vh;
+        background: #393939;
+        padding-top: 60px;
+        gap: 10px;
+        transition: right 0.4s ease;
+    }
+
+    nav .menu li {
+        border-bottom: 2px solid rgb(255, 255, 255);
+        width: 200px;
+        display: flex;
+    }
+
+    nav .menu li a {
+        padding: 0;
+    }
+
+    nav .menu li a:hover {
+        background: none;
+    }
+
+    #ham:checked+nav .menu {
+        display: flex;
+    }
+
+    #ham:checked+nav .togg {
+        filter: invert();
+    }
+
+    .posters {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .posters .pos {
+        width: 500px;
+    }
+
+    .laws {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .page {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .learn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .review {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 586px) {
+
+    header .logo {
+        width: 100%;
+    }
+
+    main {
+        padding: 20px 15px;
+    }
+
+    nav .togg {
+        position: absolute;
+        top: 30px;
+    }
+
+    .posters {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .posters .pos,
+    .posters .w-pos {
+        width: 350px;
+    }
+
+    .posters .w-pos {
+        padding: 30px 0 10px 10px;
+    }
+
+    .w-pos h2 {
+        font-size: 12px;
+
+    }
+
+    .w-pos .que {
+        position: static;
+    }
+
+    .info {
+        padding-top: 20px;
+    }
+
+    .input input {
+        width: 160px;
+    }
+
+    .details img {
+        width: 150px;
+    }
+
+    textarea {
+        width: 90%;
+    }
+
+    .gry {
+        font-size: 12px;
+    }
+
+    .but button {
+        font-size: 13px;
+    }
+
+    .but button img {
+        width: 9px;
+    }
+
+    .laws {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .page {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .learn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .review {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
 }
