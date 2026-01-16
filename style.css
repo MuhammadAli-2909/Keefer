@@ -63,7 +63,7 @@ header .contact {
 nav {
     background-image: url(menu_bg.gif);
     background-size: contain;
-    width: 100vw;
+    /* width: 100vw; */
     height: 55px;
     display: flex;
     justify-content: right;
