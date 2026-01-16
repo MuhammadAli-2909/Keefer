@@ -1053,9 +1053,6 @@ footer {
     }
 }
 @media (max-width: 510px){
-    main{
-        
-    }
     .posters .pos, .posters .w-pos{
         width: 90%;
     } 
