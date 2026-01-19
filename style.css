@@ -769,10 +769,13 @@ footer {
     }
 
     .laws .third {
-        width: 40%;
-        margin-top: 40px;
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
     }
-
+    .laws .third .button{
+        align-self: center;
+    }
     .page {
         flex-wrap: wrap;
         justify-content: center;
@@ -808,6 +811,13 @@ footer {
     .review .last {
         flex-direction: row;
         gap: 20px;
+        flex-wrap: wrap;
+    }
+    .review .last .follow{
+        width: 100%;
+    }
+    .follow .lines div{
+        width: 80%;
     }
 
 }
@@ -830,71 +840,83 @@ footer {
     nav .menu a {
         font-size: 14px;
     }
-
+    .posters{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .posters .pos{
+        width: 90%;
+    }
+    .posters .w-pos{
+        width: 90%;
+    }
     .w-pos h2 {
-        font-size: 10px;
+        font-size: 4vw;
     }
 
     .top {
-        gap: 100px;
+        gap: 14vw;
     }
 
     .top h4 {
-        font-size: 12px;
-        width: 150px;
+        font-size: 2.7vw;
+        width: 28vw;
         padding-top: 2px;
     }
 
     .top b {
-        font-size: 16px;
+        font-size: 3.5vw;
     }
 
     .w-pos .info {
-        font-size: 12px;
+        font-size: 3vw;
     }
 
     .w-pos .details {
         padding: 10px 0;
     }
-
-    .input input {
-        height: 15px;
-        width: 100px;
+    .input label{
+        
+        font-size: 2vw;
     }
-
+    .input input {
+        height: 6vh;
+        width: 33vw;
+    }
+    .details{
+        height: 40vh;
+    }
+    .details img{
+        width: 25vw;
+    }
     textarea {
-        height: 50px;
+        height: 20vh;
+        width: 75vw;
+        margin-left: 4vw;
     }
 
     textarea::placeholder {
-        font-size: 12px;
+        font-size: 2vw;
     }
 
     .gry {
-        font-size: 12px;
+        font-size: 2vw;
     }
 
     .but button {
-        font-size: 12px;
+        font-size: 3vw;
         padding: 10px 3px;
     }
 
     .but button img {
-        width: 5px;
+        width: 2vw;
     }
-
-    .laws .second {
-        width: 100%;
-        margin: 50px 0;
-        border: none;
-    }
-
-    .laws .first {
-        width: 100%;
+    .top .laptop, .bottom .book{
+        width: 100px;
     }
 
 }
-
 
 @media (max-width: 800px) {
 
@@ -969,59 +991,19 @@ footer {
         position: absolute;
         top: 30px;
     }
-    .posters {
-        flex-direction: column;
-        align-items: center;
-    }
-    .posters .pos,
-    .posters .w-pos {
-        width: 92%;
-    }
-    .w-pos h2 {
-        font-size: 20px;
-
-    }
-    .top h4{
-        font-size: 25px;
-        width: 300px;
-    }
-    .top b{
-        font-size: 35px;
-    }
-    .w-pos .info{
-        padding-top: 20px;
-        font-size: 16px;
-    }
-    .details .input{
-        align-items: start;
-    }
-
-    .input input {
+    .laws .first{
         width: 100%;
-        height: 25px;
+        margin-bottom: 40px;
     }
-
-    .details img {
+    .first .button{
+        align-self: center;
+    }
+    .laws .second{
+        width: 100%;
+        border: none;
+    }
+    .top .laptop, .bottom .book{
         width: 150px;
-    }
-
-    textarea {
-        width: 90%;
-    }
-
-    .gry {
-        font-size: 12px;
-    }
-
-    .but button {
-        font-size: 13px;
-    }
-
-    .but button img {
-        width: 9px;
-    }
-    .laws .third{
-        width: 100%;
     }
     .page{
         flex-direction: column;
@@ -1030,6 +1012,7 @@ footer {
     }
     .page .para{
         width: 90%;
+        text-align: center;
     }
     .page .learn{
         display: flex;
@@ -1039,6 +1022,7 @@ footer {
 
     }
     .learn .links{
+        flex-direction: column;
         width: 100%;
         margin: 10px 0;
         justify-content: center;
@@ -1052,25 +1036,42 @@ footer {
 
     }
 }
-@media (max-width: 510px){
-    .posters .pos, .posters .w-pos{
-        width: 90%;
-    } 
+@media (max-width: 530px){
     .w-pos .top{
-        gap: 10px;
+        gap: 30px;
     }
-    .w-pos h4{
-        font-size: 10px;
+    .top h4{
+        width: 35vw;
     }
-    .w-pos b{
-        font-size: 12px;
+    .details{
+        height: 20vw;
     }
-    .w-pos .details img{
-        width: 40%;
+    .input input{
+        height: 4vh;
+        width: 32vw;
+    }
+    .details img{
+        width:28vw;
+    }
+    textarea{
+        height: 12vh;
+        margin-left: 2vw;
+    }
+    .but button{
+        padding:7px;
     }
     .second .top, .bottom{
         flex-direction: column;
         gap: 10px;
+        padding: 0;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .blog{
+        margin-bottom: 40px;
+    }
+    .top .button, .bottom .button, .third .button{
+        padding: 0;
     }
     .page .para p{
         text-align: justify;
