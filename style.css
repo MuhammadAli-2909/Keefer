@@ -915,6 +915,13 @@ footer {
     .top .laptop, .bottom .book{
         width: 100px;
     }
+    .learn .links{
+        flex-direction: column;
+        width: 80%;
+        margin: 10px 0;
+        justify-content: center;
+        align-items: center;
+    }
 
 }
 
